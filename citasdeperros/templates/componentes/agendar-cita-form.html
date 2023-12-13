@@ -1,0 +1,19 @@
+<form action="{{ url_for('registro') }}" method="POST">
+    <div class="form-group">
+        <label for="txtnombre">Nombre de la mascota</label>
+        <input class="form-control" type="text" name="txt_nombre_mascota" id="txtnombre" placeholder="Escribe el nombre de la mascota">
+        
+        <label for="txtmodelo">Tipo de animal</label>
+        <input class="form-control" type="text" name="txt_tipo_animal" id="txtmodelo" placeholder="Ingresa el tipo de animal">
+        
+        <label for="txtcosto">Fecha de la cita (Formato: YYYY-MM-DD HH:MM:SS)</label>
+        <input class="form-control" type="text" name="txt_fecha_cita" id="txtcosto" placeholder="Escribe la fecha de la cita">
+        
+        <label for="txtcantidad">Observaciones</label>
+        <input class="form-control" type="text" name="txt_observaciones" id="txtcantidad" placeholder="Observaciones">
+    </div>
+
+    <div class="form-group mt-4">
+        <button type="submit" class="btn btn-info float-right ues-info">Registrar</button>
+    </div>
+</form>

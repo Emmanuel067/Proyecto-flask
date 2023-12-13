@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons.woff')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css')}}">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Inicio</title>
+    
+    
+    {% block cabecera %}
+        <title>Titulo</title>
+    {% endblock %}
+</head>
+<body>
+
+    
+    {% block cuerpo%}
+          <!-- BODY -->
+    {% endblock %}
+    <script src="{{ url_for('static', filename='bootstrap.bundle.js')}}"></script>
+</body>
+</html>

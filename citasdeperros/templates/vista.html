@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom.css')}}">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>ID</th>
+                <th>Nombre Mascota</th>
+                <th>Tipo Animal</th>
+                <th>Fecha Cita</th>
+                <th>Observaciones</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cita in citas %}
+            <tr>
+                <td>{{ cita.id }}</td>
+                <td>{{ cita.nombre_mascota }}</td>
+                <td>{{ cita.tipo_animal }}</td>
+                <td>{{ cita.fecha_cita }}</td>
+                <td>{{ cita.observaciones }}</td>
+                <td>
+                    <a href="{{ url_for('act', id=cita.id) }}">Actualizar</a>
+                    <a href="{{ url_for('eliminar', id=cita.id) }}">Eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block cabecera %}
+    <title>Registro</title>
+{% endblock %}
+
+{% block cuerpo %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                {% include 'componentes/navbar.html' %}
+                {% include 'componentes/publicar-form.html' %}
+            </div>
+            <div class="col-8">
+                <h5 class="text-center" style="color: blue; font-size: 30px;" > Cuando se trata del bienestar de tus mascotas, nuestra pasión es la cura: ¡Cuidando Huellas, Sanando Corazones!"</h5>
+                <hr>
+                {% for cita in citas %}
+                    <p>Nombre de la mascota: {{ cita.nombre_mascota }}</p>
+                    <p>Tipo de animal: {{ cita.tipo_animal }}</p>
+                    <p>Fecha de la cita: {{ cita.fecha_cita }}</p>
+                    <p>Observaciones: {{ cita.observaciones }}</p>
+                    <hr>
+                {% endfor %}
+                <br><br><br><br><h2 class="text-center">Tu mejor amigo merece lo mejor. Regístralo con nosotros, donde cada huella cuenta y cada cuidado es personalizado.</h2>
+            </div>
+            <div class="col-2">
+                {% include 'componentes/contacto.html' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

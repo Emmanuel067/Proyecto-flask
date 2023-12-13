@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+
+{% block cabecera %}
+    <title>UES SJR</title>
+{% endblock %}
+
+{% block cuerpo %}
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-6">
+                <h5 class="text-center">REGISTRATE</h5>
+                {% include 'componentes/publicar-form.html' %}
+                <hr>
+                <table class="table table-light">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre Mascota</th>
+                            <th>Tipo Animal</th>
+                            <th>Fecha Cita</th>
+                            <th>Observaciones</th>
+                            <th>Acciones</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for cita in citas %}
+                        <tr>
+                            <td>{{ cita.id }}</td>
+                            <td>{{ cita.nombre_mascota }}</td>
+                            <td>{{ cita.tipo_animal }}</td>
+                            <td>{{ cita.fecha_cita }}</td>
+                            <td>{{ cita.observaciones }}</td>
+                            <td>
+                                <a href="{{ url_for('act', id=cita.id) }}">Actualizar</a>
+                                <a href="{{ url_for('eliminar', id=cita.id) }}">Eliminar</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

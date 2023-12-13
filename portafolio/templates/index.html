@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <!-- Add Your Title -->
+  <title> Your Title Here </title>
+
+  <!-- All Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- All Link tags -->
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-144x144-precomposed.png">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+  <link rel="Stylesheet" href="{{url_for('static',filename='/css/main.css')}}">
+  <link rel="Stylesheet" href="{{url_for('static',filename='/css/normalize.min.css')}}">
+
+
+
+  <!-- All script tags -->
+  <script src="{{ url_for('static', filename='js/vendor/jquery-1.10.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/vendor/jquery.easytabs.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/vendor/jquery.hashchange.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  
+</head>
+
+<!-- Start of Body Tag -->
+
+<body class="bg-fixed bg-1">
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+
+      <!-- Header Start -->
+      <header id="header">
+        <div id="logo">
+          <h6>
+            Your Name
+          </h6>
+          <h4>
+            Tag1 / Tag2
+          </h4>
+        </div>
+      </header>
+
+      <!-- Text "hello world" -->
+      <header id="header">
+        <div id="helloworld">
+          <h1>
+            Hello, World !
+          </h1>
+        </div>
+      </header>
+
+      <!-- Main Tab Container -->
+      <div id="tab-container" class="tab-container">
+
+        <!-- Tab List -->
+        <ul class='etabs'>
+
+          <li class='tab' id="tab-about">
+            <a href="#about">
+              <i class="icon-user"></i>
+              <span>
+                Sobre mi
+              </span>
+            </a>
+          </li>
+
+          <li class='tab'>
+            <a href="#resume">
+              <i class="icon-file-text"></i>
+              <span>
+                Habilidades
+              </span>
+            </a>
+          </li>
+
+          <li class='tab'>
+            <a href="#portfolio">
+              <i class="icon-heart"></i>
+              <span>
+                Proyectos
+              </span>
+            </a>
+          </li>
+
+          <li class='tab'>
+            <a href="#contact">
+              <i class="icon-envelope"></i>
+              <span>
+                Contacto
+              </span>
+            </a>
+          </li>
+
+        </ul>
+        <!-- End Tab List -->
+
+        <!-- ----------------------------------------------------------------------------------- -->
+        <!-- Code for differents Tabs strat from here. -->
+        <div id="tab-data-wrap">
+
+          <!-- About Tab Data -->
+          <div id="about">
+            <section class="clearfix">
+              <div class="g2">
+                <div class="photo">
+                    <img src="{{ url_for('static', filename='img/foto.jpg') }}" alt="Mi Imagen">
+                </div>
+                <div class="info">
+                  <h2>
+                    <p></p>
+                    Emmanuel Dominguez Carbajal
+                  </h2>
+                  <h4>
+                    Your work tag
+                  </h4>
+                  <p>
+                    Actualmente estoy cursando el séptimo semestre de la carrera de Ingeniería en Sistemas Computacionales. Tengo un especial interés en la programación y el desarrollo web.
+                  </p>
+                  </p>
+                </div>
+              </div>
+
+              <div class="g1">
+                <div class="main-links sidebar">
+                  <ul>
+                    <li>
+                      <a href="#resume">
+                        Mis Habilidadres
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#portfolio">
+                        Mis Projectos
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#contact">
+                        Contratarme para tu próximo proyecto
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="break">
+              </div>
+              <div class="contact-info">
+                <div class="g1">
+                  <div class="item-box clearfix">
+                    <i class="icon-envelope"></i>
+                    <div class="item-data">
+                      <h3>
+                        <a href="mailto:write@your_mail.here">
+                          Add Your mail
+                        </a>
+                      </h3>
+                      <p>
+                        Email Address
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="g1">
+                  <div class="item-box clearfix">
+                    <i class="icon-facebook"></i>
+                    <div class="item-data">
+                      <h3>
+                        <a href="http://fb.me/your-Username">
+                          Add Facebook Link
+                        </a>
+                      </h3>
+                      <p>
+                        Facebook Profile
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="g1">
+                  <div class="item-box clearfix">
+                    <i class="icon-twitter"></i>
+                    <div class="item-data">
+                      <h3>
+                        <a href="http://twitter.com/your-Username">
+                          Add Twiter username
+                        </a>
+                      </h3>
+                      <p>
+                        Twitter Handle
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- End About Tab Data -->
+          <!-- ----------------------------------------------------------------------------------- -->
+          <!-- skills Tab Data -->
+          <div id="resume">
+            <section class="clearfix">
+              <div class="g2">
+                <h3>
+                  Lenguajes de Programacion
+                </h3>
+                <div class="meter emerald">
+                  <span style="width: 50%">
+                    <span>
+                      Python
+                    </span>
+                  </span>
+                </div>
+                <div class="meter emerald">
+                  <span style="width: 70%">
+                    <span>
+                      Java
+                    </span>
+                  </span>
+                </div>
+                <div class="meter emerald">
+                  <span style="width: 30%">
+                    <span>
+                      C#
+                    </span>
+                  </span>
+                </div>
+                <div class="meter emerald">
+                  <span style="width: 25%">
+                    <span>
+                      JavaScript
+                    </span>
+                  </span>
+                </div>
+                <div class="meter emerald">
+                  <span style="width: 40%">
+                    <span>
+                      TypeScript
+                    </span>
+                  </span>
+                </div>
+                <div class="break"></div>
+              </div>
+
+              <div class="g1">
+                <h3>
+                  Frameworks
+                </h3>
+                <div class="meter emerald">
+                  <span style="width: 60%">
+                    <span>
+                      Flask
+                    </span>
+                  </span>
+                </div>
+                <div class="meter emerald">
+                  <span style="width: 40%">
+                    <span>
+                      Django
+                    </span>
+                  </span>
+                </div>
+                <div class="meter emerald">
+                  <span style="width: 60%">
+                    <span>
+                      Angular
+                    </span>
+                  </span>
+                </div>
+                <div class="meter emerald">
+                  <span style="width: 60%">
+                    <span>
+                      Spring Boot
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="g2">
+                <h3>
+                  Hobbies
+                </h3>
+                <span class="label label-info">Colaborar y Aprender</span>
+                <span class="label label-info">Mejorar Habilidades</span>
+                <span class="label label-info">Participar en Proyectos</span>
+                <span class="label label-info">Aprender Tecnologías </span>
+              </div>
+            </section>
+          </div>
+
+          <!-- End skills Tab Data -->
+          <!-- ----------------------------------------------------------------------------------- -->
+          <!-- Projects Tab Data -->
+          <div id="portfolio">
+            <section class="clearfix">
+              <div class="project-section">
+                <div class="project-container">
+                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                    <img src="{{ url_for('static', filename='img/foto.jpg') }}" alt="Mi Imagen">
+                  </div>
+                  <p class="project-title">Veterinaria</p>
+                </div>
+              </div>
+              <div id="modal-wrapper" class="modal">
+                <form class="modal-content animate">
+                  <div class="imgcontainer" >
+                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                    <img src="{{ url_for('static', filename='img/logo1.png') }}" alt="Mi Imagen">
+                    <h1 class="project_details" style="text-align:center">Detalles del Proyecto</h1>
+                  </div>
+
+                  <div class="container">
+                    <input type="text" placeholder="Veterinaria" name="uname" readonly>
+                    <textarea class="project_description" rows="3" placeholder="Crud con flask de un registro de citas de animales para una veterinaria" readonly></textarea>
+                    <input type="url" placeholder="Link"readonly>
+                    <input type="text" placeholder="Python" readonly>
+                    <button class="project_submit" type="submit">Aceptar</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </section>
+          </div>
+          <!-- End Projects tab -->
+          <!-- ----------------------------------------------------------------------------------- -->
+          <!-- Contact Tab Data -->
+          <div id="contact">
+            <section class="clearfix">
+              <div class="g1">
+                <div class="sny-icon-box">
+                  <div class="sny-icon">
+                    <i class="icon-globe"></i>
+                  </div>
+                  <div class="sny-icon-content">
+                    <h4>
+                      Direccion
+                    </h4>
+                    <p>
+                      Km 2, Carretera Desviación de Altamirano a Lagunaseca, Col. Doctor Gustavo Bas, Villa Victoria, México
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="g1">
+                <div class="sny-icon-box">
+                  <div class="sny-icon">
+                    <i class="icon-phone"></i>
+                  </div>
+                  <div class="sny-icon-content">
+                    <h4>
+                      E-mail
+                    </h4>
+                    <p>
+                      emmanueldominguez076@gmail.com<br />elbichosiuuuuuuu@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="g1">
+                <div class="sny-icon-box">
+                  <div class="sny-icon">
+                    <i class="icon-user"></i>
+                  </div>
+                  <div class="sny-icon-content">
+                    <h4>
+                      Sobre mi
+                    </h4>
+                    <p>
+                      "Estudiante apasionado de programación en constante aprendizaje."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="break"></div>
+            </section>
+          </div>
+          <!-- End Contact Data -->
+          <!-- ----------------------------------------------------------------------------------- -->
+        </div>
+      </div>
+</body>
+
+</html>

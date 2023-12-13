@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% block cabecera %}
+    <title>Consultorio Veterinario</title>
+{% endblock %}
+
+{% block cuerpo %}
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                {% include 'componentes/navbar.html' %}
+            </div>
+            <div class="col-6">
+                <h5>Inicio</h5>
+                {% include 'componentes/actualizar.html' %}
+                <hr>
+                {% for cita in citas %}
+                    {{ cita.nombre_mascota }}
+                    {{ cita.tipo_animal }}
+                    {{ cita.fecha_cita }}
+                    {{ cita.observaciones }}
+                {% endfor %}
+            </div> 
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+{% endblock %}
